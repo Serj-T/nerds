@@ -2,18 +2,25 @@
   float: left;
   width: 240px;
 }
+.filters span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
 .filters ul {
   .list-reset();
 }
 .filter__range {
   width: 100%;
-  margin: 50px auto;
+  margin-bottom: 48px;
 }
 .filter__controls {
   position: relative;
   width: auto;
   padding: 39px 20px;
-  margin: 14px 0;
+  margin: 13px 0;
+  border-radius: 3px;
   background-color: #f1f1f1;
 }
 .filter__scale {
@@ -48,8 +55,8 @@
 }
 .filter__price label {
   display: inline-block;
-  width: 50%;
   vertical-align: baseline;
+  width: 50%;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -59,16 +66,19 @@
 .filter__price input {
   width: 60px;
   height: 22px;
+  margin-left: 5px;
   padding: 8px 10px;
   background-color: #f1f1f1;
+  border-radius: 3px;
   border: none;
   outline: none;
   text-align: center;
 }
 .filters fieldset {
-  border: none;
   .list-reset();
+  border: none;
   margin-bottom: 50px;
+  font-size: 18px;
 }
 legend {
   text-transform: uppercase;
@@ -82,7 +92,8 @@ legend {
   display: inline-block;
   position: relative;
   padding-left: 35px;
-  padding-top: 20px;
+  padding-top: 18px;
+  font-size: 16px;
   color: #283136;
   cursor: pointer;
 }

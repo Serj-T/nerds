@@ -65,7 +65,7 @@
 
 		<div class="filters">
 			<form action="https://echo.htmlacademy.ru" method="get">
-				<span class>Стоимость:</span>
+				<span>Стоимость:</span>
 				<div class="filter__range">
 					<div class="filter__controls">
 					  <div class="filter__scale">
@@ -75,15 +75,15 @@
 				  	<div class="filter__scale-toggle  filter__scale-toggle--max"></div>
 					</div>
 					<div class="filter__price">
-        		<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-        		<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        		<label class="min-price">от  <input name="min-price" type="text" value="0"></label>
+        		<label class="max-price">до  <input name="max-price" type="text" value="15000"></label>
         	</div>
 				</div>
 				<fieldset>
 					<legend>Сетка:</legend>
 					<ul class="filters__radio">
 						<li>
-							<input id="adaptive" type="radio"  value="adaptive" name="grid" checked disabled>
+							<input id="adaptive" type="radio" value="adaptive" name="grid" checked disabled>
 							<label for="adaptive">Адаптивная</label>
 						</li>
 						<li>
@@ -130,7 +130,7 @@
 			<div class="shop__sorting">
 				<span>Сортировать:</span>
 					<ul class="shop__sorting-list">
-						<li class="shop__sorting-item shop__sorting-item--active"><a href="#">По цене</a></li>
+						<li class="shop__sorting-item  shop__sorting-item--active"><a href="#">По цене</a></li>
 						<li class="shop__sorting-item"><a href="#">По типу</a></li>
 						<li class="shop__sorting-item"><a href="#">По функционалу</a></li>
 					</ul>
@@ -141,22 +141,66 @@
 			</div>
 
 			<div class="shop__list">
-				<a class="shop__item" href="#">
-					<img src="img/aviator-item.jpg" alt="Aviator" width="240" height="240">
-				</a>
-				<a class="shop__item" href="#">
-					<img src="img/sunset-item.jpg" alt="Sunset" width="240" height="240">
-				<a class="shop__item" href="#">
-					<img src="img/forte-item.jpg" alt="Forte" width="240" height="240">
-				<a class="shop__item" href="#">
-					<img src="img/marquee-item.jpg" alt="Marquee" width="240" height="240">
-				</a>
-				<a class="shop__item" href="#">
-					<img src="img/avenue-item.jpg" alt="Avenue" width="240" height="240">
-				</a>
-				<a class="shop__item" href="#">
-					<img src="img/dovetail-item.jpg" alt="Dovetail" width="240" height="240">
-				</a>
+				<div class="shop__item">
+					<div class="item-modal">
+						<h3>Aviator</h3>
+						<span>Одностраничный макет с авторским	 дизайном</span>
+						<a class="btn  btn--item-modal" href="#">8000 Р.</a>
+					</div>
+					<div class="shop__item-img">
+						<img src="img/aviator-item.jpg" alt="Aviator" width="240" height="240">
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="item-modal">
+						<h3>Sunset</h3>
+						<span>Интернет-магазин с личным кабинетом</span>
+						<a class="btn  btn--item-modal" href="#">10000 Р.</a>
+					</div>
+					<div class="shop__item-img">
+						<img src="img/sunset-item.jpg" alt="Sunset" width="240" height="240">
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="item-modal">
+						<h3>Forte</h3>
+						<span>Отличный макет для личного блога</span>
+						<a class="btn  btn--item-modal" href="#">5000 Р.</a>
+					</div>
+					<div class="shop__item-img">
+						<img src="img/forte-item.jpg" alt="Forte" width="240" height="240">
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="item-modal">
+						<h3>Modern Organic THAI</h3>
+						<span>Сайт для ресторана быстрого питания</span>
+						<a class="btn  btn--item-modal" href="#">12000 Р.</a>
+					</div>
+					<div class="shop__item-img">
+						<img src="img/marquee-item.jpg" alt="Marquee" width="240" height="240">
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="item-modal">
+						<h3>Avenue</h3>
+						<span>Макет для блога о путешествиях</span>
+						<a class="btn  btn--item-modal" href="#">8000 Р.</a>
+					</div>
+					<div class="shop__item-img">
+						<img src="img/avenue-item.jpg" alt="Avenue" width="240" height="240">
+					</div>
+				</div>
+				<div class="shop__item">
+					<div class="item-modal">
+						<h3>Dovetail</h3>
+						<span>Интернет-магазин с галереей товаров</span>
+						<a class="btn  btn--item-modal" href="#">4000 Р.</a>
+					</div>
+					<div class="shop__item-img">
+						<img src="img/dovetail-item.jpg" alt="Dovetail" width="240" height="240">
+					</div>
+				</div>
 			</div>
 
 			<div class="paginator">
@@ -183,7 +227,7 @@
 
 	<footer class="main-footer">
 		<div class="main-footer__wrap">
-			<div class="social">
+			<div class="main-footer__social">
 				<a class="btn  btn--social" href="#"><i class="icon-vk"></i></a>
 				<a class="btn  btn--social" href="#"><i class="icon-facebook"></i></a>
 				<a class="btn  btn--social" href="#"><i class="icon-instagramm"></i></a>

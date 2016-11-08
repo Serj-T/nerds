@@ -1,7 +1,7 @@
 .slider {
   position: relative;
-  background: #eeeeee;
   margin-bottom: 80px;
+  background: #eeeeee;
 }
 .slider__wrap {
   width: 880px;
@@ -15,11 +15,11 @@
 }
 .slider__controls {
   position: absolute;
-  bottom: 94px;
+  bottom: 84px;
   right: 50%;
   width: 200px;
   height: 20px;
-  margin-right: -100px;
+  margin-right: -94px;
   text-align: center;
   font-size: 0;
   z-index: 100;
@@ -44,7 +44,7 @@
 .slider__list {
   position: relative;
   width: 880px;
-  height: 270px;
+  height: 326px;
 }
 .slider__item {
   position: absolute;
@@ -57,36 +57,31 @@
 }
 .slide__title {
   width: 480px;
+  margin-top: 46px;
+  margin-bottom: 19px;
+  margin-left: -2px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 500;
 }
 .slide__text {
-  width: 480px;
+  width: 464px;
+  margin-bottom: 28px;
 }
 .slider__list .slider__item:nth-child(1) {
   background: url("../img/slider-mac.png") no-repeat;
-  background-position: 100% 50%;
+  background-position: 100% 26px;
 }
 .slider__list .slider__item:nth-child(2) {
   background: url("../img/slider-calc.png") no-repeat;
-  background-position: 100% 0%;
+  background-position: 639px 31px;
 }
 .slider__list .slider__item:nth-child(3) {
   background: url("../img/slider-robot.png") no-repeat;
-  background-position: 100% 50%;
+  background-position: 540px 8px;
 }
 #btn-1:checked ~ .slider__list .slider__item:nth-child(1),
 #btn-2:checked ~ .slider__list .slider__item:nth-child(2),
 #btn-3:checked ~ .slider__list .slider__item:nth-child(3) {
     display: block;
 }
-/* .slides {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color:rgba(255,255,0,0.1);
-} */
