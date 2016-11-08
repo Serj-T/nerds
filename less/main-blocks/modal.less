@@ -4,43 +4,8 @@
   width: 460px;
   padding: 50px 80px;
   margin: 0 auto;
-  background-color: lightgreen;
   box-shadow: 0 20px 60px rgba(0,1,1,.75);
   z-index: 10;
-}
-.modal__close {
-  position: absolute;
-  display: block;
-  right: 6px;
-  top: 7px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  background-color: #fb565a;
-}
-.modal__close::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 18px;
-  left: 11px;
-  width: 19px;
-  height: 4px;
-  background-color: white;
-  transform: rotate(-45deg);
-}
-.modal__close::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 18px;
-  left: 11px;
-  width: 19px;
-  height: 4px;
-  background-color: white;
-  transform: rotate(45deg);
 }
 .modal label {
   display: block;
@@ -57,15 +22,29 @@
 .modal__user-block:nth-child(3) {
   width: 100%;
 }
-.modal input[type="text"] {
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #d7dcde;
-  border-radius: 5px;
-}
+.modal input[type="text"],
 .modal textarea[name="textarea"] {
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 8px 10px;
   border: 2px solid #d7dcde;
   border-radius: 5px;
+  outline: none;
+  transition: border-color .7s;
 }
+.modal input[type="text"]:hover,
+.modal textarea[name="textarea"]:hover {
+  border-color: #a2a9ac;
+  transition: border-color .3s;
+}
+.modal input[type="text"]:focus,
+.modal textarea[name="textarea"]:focus {
+  border-color: #56bffb;
+  transition: border-color .3s;
+}
+::-webkit-input-placeholder {.placeholder-style();}
+::-moz-placeholder          {.placeholder-style();}/* Firefox 19+ */
+:-moz-placeholder           {.placeholder-style();}/* Firefox 18- */
+:-ms-input-placeholder      {.placeholder-style();}

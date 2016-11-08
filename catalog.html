@@ -43,7 +43,7 @@
 	</div>
 
 	<div class="modal">
-		<button class="modal__close"></button>
+		<button class="btn  btn--close"></button>
 		<form action="https://echo.htmlacademy.ru" method="get">
 			<div class="modal__user-block">
 				<label for="name">Ваше имя:</label>
@@ -83,7 +83,7 @@
 					<legend>Сетка:</legend>
 					<ul class="filters__radio">
 						<li>
-							<input id="adaptive" type="radio"  value="adaptive" name="grid" checked>
+							<input id="adaptive" type="radio"  value="adaptive" name="grid" checked disabled>
 							<label for="adaptive">Адаптивная</label>
 						</li>
 						<li>
@@ -100,7 +100,7 @@
 					<legend>Особенности:</legend>
 					<ul class="filters__checkbox">
 						<li>
-							<input id="slider" type="checkbox" name="slider">
+							<input id="slider" type="checkbox" name="slider" checked disabled>
 							<label for="slider">Слайдер</label>
 						</li>
 						<li>
@@ -128,14 +128,14 @@
 		<div class="shop">
 
 			<div class="shop__sorting">
-				<div class="shop__sorting-list">
-					<span>Сортировать:</span>
-					<a href="#">По цене</a>
-					<a href="#">По типу</a>
-					<a href="#">По функционалу</a>
-				</div>
+				<span>Сортировать:</span>
+					<ul class="shop__sorting-list">
+						<li class="shop__sorting-item shop__sorting-item--active"><a href="#">По цене</a></li>
+						<li class="shop__sorting-item"><a href="#">По типу</a></li>
+						<li class="shop__sorting-item"><a href="#">По функционалу</a></li>
+					</ul>
 				<div class="shop__sorting-price">
-					<a href="#"><i class="icon-down-dir  icon-down-dir--active"></i></a>
+					<a href="#"><i class="icon-down-dir  sort-icon--active"></i></a>
 					<a href="#"><i class="icon-up-dir"></i></a>
 				</div>
 			</div>
@@ -160,11 +160,11 @@
 			</div>
 
 			<div class="paginator">
-				<ul class="paginator__list">
-					<li class="paginator__item  paginator__item--active"><a href="#">1</a></li>
-					<li class="paginator__item"><a href="#">2</a></li>
-					<li class="paginator__item"><a href="#">3</a></li>
-					<li class="paginator__item"><a href="#">Следующая</a></li>
+				<ul>
+					<li><a class="btn  btn--paginator  btn--paginator-active" href="#">1</a></li>
+					<li><a class="btn  btn--paginator" href="#">2</a></li>
+					<li><a class="btn  btn--paginator" href="#">3</a></li>
+					<li><a class="btn  btn--paginator" href="#">Следующая</a></li>
 				</ul>
 			</div>
 		</div>
@@ -184,9 +184,9 @@
 	<footer class="main-footer">
 		<div class="main-footer__wrap">
 			<div class="social">
-				<a class="social__btn" href="#"><i class="icon-vk"></i></a>
-				<a class="social__btn" href="#"><i class="icon-facebook"></i></a>
-				<a class="social__btn" href="#"><i class="icon-instagramm"></i></a>
+				<a class="btn  btn--social" href="#"><i class="icon-vk"></i></a>
+				<a class="btn  btn--social" href="#"><i class="icon-facebook"></i></a>
+				<a class="btn  btn--social" href="#"><i class="icon-instagramm"></i></a>
 			</div>
 			<div class="footer__text">
 				<span>Давайте дружить, это выгодно!</span>

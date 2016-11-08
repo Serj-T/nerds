@@ -7,8 +7,14 @@
   .clearfix();
 }
 .shop__sorting-list {
+  .list-reset();
+  display: block;
   float: left;
-  width: 480px;
+  width: 400px;
+}
+.shop__sorting-list li {
+  display: inline-block;
+  vertical-align: top;
 }
 .shop__sorting a {
   position: relative;
@@ -19,8 +25,11 @@
   line-height: 18px;
   text-decoration: none;
   color: #b2b2b2;
+  transition: color .7s;
 }
-.shop__sorting-list span {
+.shop__sorting span {
+  display: block;
+  float: left;
   margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
@@ -35,6 +44,21 @@
   border-bottom: 1px dashed #00ca74;
   cursor: pointer;
 }
+.shop__sorting-list a:hover::after {
+  border-bottom: 1px solid #00ca74;
+}
+.shop__sorting-list a:hover {
+  color: black;
+  transition: color .3s;
+}
+.shop__sorting-item--active a {
+  color: black;
+  cursor: default;
+}
+.shop__sorting-item--active a::after,
+.shop__sorting-item--active a:hover::after {
+  border-bottom: none;
+}
 .shop__sorting-price {
   display: block;
   float: right;
@@ -42,10 +66,10 @@
 .shop__sorting-price a {
   margin-right: 0;
 }
-.icon-down-dir.icon-down-dir--active {
+.sort-icon--active {
   color: #00ca74;
+  cursor: default;
 }
-
 .shop__list {
   font-size: 0;
   text-align: right;
@@ -60,6 +84,7 @@
   border-radius: 5px;
   font-size: 14px;
   line-height: 18px;
+  transition: border-color .7s;
 }
 .shop__item::before {
   content: "";
@@ -73,6 +98,10 @@
   background-color: white;
   box-shadow: 16px 0 0 0 white,
               32px 0 0 0 white;
+}
+.shop__item:hover {
+  border-color: #797979;
+  transition: border-color .3s;
 }
 .shop__item:nth-child(2n) {
   margin-right: 0;
