@@ -1,0 +1,79 @@
+.shop {
+  float: right;
+  width: 560px;
+  font-size: 0;
+}
+.shop__sorting {
+  .clearfix();
+}
+.shop__sorting-list {
+  float: left;
+  width: 480px;
+}
+.shop__sorting a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 45px;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #b2b2b2;
+}
+.shop__sorting-list span {
+  margin-right: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: uppercase;
+}
+.shop__sorting-list a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px dashed #00ca74;
+  cursor: pointer;
+}
+.shop__sorting-price {
+  display: block;
+  float: right;
+}
+.shop__sorting-price a {
+  margin-right: 0;
+}
+.icon-down-dir.icon-down-dir--active {
+  color: #00ca74;
+}
+
+.shop__list {
+  font-size: 0;
+  text-align: right;
+}
+.shop__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  border-top: 30px solid #f1f1f1;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.shop__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 16px 0 0 0 white,
+              32px 0 0 0 white;
+}
+.shop__item:nth-child(2n) {
+  margin-right: 0;
+}
