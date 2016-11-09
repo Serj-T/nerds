@@ -1,11 +1,18 @@
 .modal {
   display: none;
-  position: relative;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
   width: 460px;
   padding: 50px 80px;
-  margin: 0 auto;
+  background-color: white;
   box-shadow: 0 20px 60px rgba(0,1,1,.75);
-  z-index: 10;
+  z-index: 100;
+}
+.modal-on {
+  display: block;
+  animation: bounce .5s;
 }
 .modal label {
   display: block;
@@ -48,3 +55,13 @@
 ::-moz-placeholder          {.placeholder-style();}/* Firefox 19+ */
 :-moz-placeholder           {.placeholder-style();}/* Firefox 18- */
 :-ms-input-placeholder      {.placeholder-style();}
+
+.modal--page {
+  display: block;
+  position: static;
+  margin: 0 auto;
+  box-shadow: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 20px 60px rgba(0,1,1,.75);
+}
