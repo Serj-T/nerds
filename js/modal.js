@@ -4,19 +4,19 @@ var popupClose = document.querySelector('.modal-close');
 var modalOverlay = document.querySelector('.overlay');
 
 link.addEventListener('click', function(event) {
-  event.preventDefault(event);
+  event.preventDefault();
   popup.classList.add('modal-on');
   modalOverlay.classList.add('overlay-on');
 });
 
 popupClose.addEventListener('click', function(event) {
-  event.preventDefault(event);
+  event.preventDefault();
   popup.classList.remove('modal-on');
   modalOverlay.classList.remove('overlay-on');
 });
 
 modalOverlay.addEventListener('click', function(event) {
-  event.preventDefault(event);
+  event.preventDefault();
   popup.classList.remove('modal-on');
   modalOverlay.classList.remove('overlay-on');
 });

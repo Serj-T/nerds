@@ -1,5 +1,4 @@
 psd/
-last-version/
 node_modules/
 css/*.css
 .DS_Store
@@ -9,5 +8,4 @@ css/*.css
 *.pdf
 *.psd
 *.sublime*
-readme.md
 Thumbs.db

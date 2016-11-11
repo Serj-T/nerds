@@ -3,18 +3,16 @@
   border-bottom: 2px solid #eeeeee;
 }
 .features__wrap {
-  width: 880px;
-  margin: 0 auto;
-  padding: 0 10px;
+  .wrap();
   .clearfix();
 }
 .features__block {
-  width: 240px;
   float: left;
+  width: 240px;
   margin-right: 80px;
-}
-.features__block:nth-child(3n) {
-  margin-right: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 .features__image {
   width: 240px;

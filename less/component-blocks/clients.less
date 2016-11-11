@@ -2,33 +2,35 @@
   padding-top: 40px;
   padding-bottom: 0px;
   border-bottom: 2px solid #eeeeee;
+  font-size: 0;
 }
-.clients__wrap {
+.clients__wrap { /* Кастомный wrap */
   width: 860px;
   margin: 0 auto;
-  padding: 0 20px; /* !Кастомный! */
+  padding: 0 20px;
 }
-.client__block {
-  min-width: 285px;
+.clients__block {
   display: inline-block;
   vertical-align: middle;
+  min-width: 285px;
   margin-bottom: 31px;
+
+  &:nth-child(3n-1) {
+    text-align: center;
+  }
+  &:nth-child(3n) {
+    text-align: right;
+  }
 }
-.client__block:nth-child(3n-1) {
-  text-align: center;
-}
-.client__block:nth-child(3n) {
-  text-align: right;
-}
-.client__block a {
+.clients__block a {
   opacity: .2;
   transition: opacity .7s;
-}
-.client__block a:hover {
-  opacity: 1;
-  transition: opacity .3s;
-}
-.client__block a:active {
-  opacity: 1;
-  transition: opacity .3s;
+  &:hover {
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  &:active {
+    opacity: 1;
+    transition: opacity .3s;
+  }
 }
